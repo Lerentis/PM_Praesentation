@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Data Compression &amp; Algorithms</title>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'> -->
+      <link rel="stylesheet" href="css/impress-TFA.css"  />
+      <link rel="stylesheet" href="lib/faws/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="lib/animate.css"/>
+    </head>
+    <body ng-app>
+      <div id="impress">
+        <!-- Intro Slide  -->
+        <div class="step opacity words" data-x="0"  data-y="0"  data-z="0" >
+          <h1 class="fa fa-binoculars fa-5x textCenter"></h1>
+          <div class="em14">Data</div>
+          <div class="em5">Compression</div>
+          <div class="em55">Algorithms</div>
+        </div>
+ 
+        <!-- What is it -->
+        <div class="step opacity words" data-x="0"  data-rotate-x="90" data-y="0"   data-scale="40" >
+          <div class="em5">
+            What is it
+            <i class="colorTitle fa fa-question-circle"></i>
+          </div>
+        </div>
+
+
+
+        <!-- detail What is it -->
+        <div class="step opacity words" data-x="-1000"  data-rotate-x="90" data-y="0" data-z="300" data-scale="40" >
+          <div class="bar">
+            <ul>
+              <li class="substep">Encoding of bits to generate a smaller file</li>
+              <li class="substep">Two types of compression. Lossy and Lossless</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Claude Shannon -->
+        <div class="step opacity words" data-x="1000"  data-y="500" data-z="-11000" >
+        <h1 class="em10">Why</h1>
+          <h1 class="em7">do we</h1>
+          <h1 class="em7">use it</h1>
+          <h2 class="em3 colorTitle" style="margin-left:100px;">
+          <i class="fa fa-question-circle fa-4x"></i>
+          </h2>
+        </div>
+        <!-- detail why -->
+      <div class="step opacity words" data-x="1300"  data-y="670" data-z="-11000" >
+        <div class="bar">
+            <ul>
+              <li class="substep">Storage Space</li>
+              <li class="substep">What’s the Catch?</li>
+            </ul>
+        </div>
+      </div>
+
+
+        <!-- Samuel Morse -->
+        <div class="step opacity words" data-x="2000" data-rotate-y="70" data-y="1000" data-z="-13000" >
+          
+        <div class="model">
+          
+          <h1 class="em55">Where</h1>
+          <h1 class="em6">do we </h1>
+          <h1 class="em6">use it </h1>
+        </div>
+          <div class="model" style="margin-left:-80px; margin-top:50px;">
+          <h2 class="em3 colorTitle" style="margin-left:100px;">
+            <i class="fa fa-question-circle fa-4x"></i>
+              </h2>
+          </div>
+          <div class="clearfix"></div>
+         <div class="substep em1">audio, video, images, text, ...pretty much everything.</div> 
+         <div class="substep em1">So many algorithms….</div>
+
+        </div>
+
+        <!-- ASCII Encoding -->
+        <div class="step opacity words" data-x="3000"  data-y="1700" data-z="-15000" >
+          <h2 class="fa fa-qrcode textCenter fa-5x"></h2>
+          <div class="em5">
+            ASCII Encoding
+          </div>
+        </div>
+        <div class="step slide opacity" data-x="3000" data-rotate-y="180" data-y="1800" data-z="-16000" >
+          <div class="title em3"> ASCII Encoding</div>
+          <img src="img/ascii.png" class="model" alt="">
+          <div class="model">
+            <b class="textCenter em2">"Mississippi river"</b>
+            <br>
+            <p class="model em1 substep">
+            "01001101 01001001 01010011 01010011 01001001 <br>
+            01010011 01010011 01001001 01010000 01010000 <br>
+            01001001 00100000 01010010 01001001 01010110 <br>
+            01000101 01010010"
+            </p>
+            <p class="em15 substep" style="margin-left:100px">
+            17 <b class="js">char</b> </br>
+            x8 <b class="js">bit</b> </br>
+            ========</br>
+            136 <b class="js">bit</b>
+            </p>
+          </div>
+          <div class="clearfix"></div>
+          <p class="substep em2 textCenter">Can we do better? </p>
+        </div>
+        <!-- Huffman Encoding -->
+        <div class="step slide opacity" data-x="3000" data-y="180"  data-z="-16000" >
+          <div class="title em2">Huffman coding</div>
+
+          <div class="model">
+            <ul>
+              <li>Discovered as term assignment</li>
+              <li>Uses STATISTICAL approach</li>
+              <li>
+                
+        <table>
+            <tr>
+             <h3> "Mississippi river" </h3>
+              <th>Character</th>
+              <th>Appearance</th>
+            </tr>
+            <tr class="substep">
+              <td>'M'</td>
+              <td>1</td>
+            </tr>
+            <tr class="substep">
+              <td>'i'</td>
+              <td>5</td>
+            </tr>
+            <tr class="substep">
+              <td>'s'</td>
+              <td>4</td>
+            </tr>
+            <tr class="substep">
+              <td>'p'</td>
+              <td>2</td>
+            </tr>
+            <tr class="substep">
+              <td>'r'</td>
+              <td>2</td>
+            </tr>
+            <tr class="substep">
+              <td>'v'</td>
+              <td>1</td>
+            </tr>
+            <tr class="substep">
+              <td>'e'</td>
+              <td>1</td>
+            </tr>
+            <tr class="substep">
+              <td>_</td>
+              <td>1</td>
+            </tr>
+          </table>
+              </li>
+            </ul>
+          </div>
+          <div class="model substep">
+            <img src="img/HUFFMAN.png" width="470" height="500" class="imgCenter" alt="">
+          </div>
+          
+        </div>
+        <div class="step slide opacity" data-x="3000" data-y="180" data-rotate-y="180" data-z="-16500" >
+          <h1 class="title em2">"Mississippi river"</h1>
+          <img src="img/hufShort.png" alt="">
+          <table style="margin-left: -25px;">
+          <tr>
+            <th>M</th>
+            <th>I</th>
+            <th>S</th>
+            <th>S</th>
+            <th>I</th>
+            <th>S</th>
+            <th>S</th>
+            <th>I</th>
+            <th>P</th>
+            <th>P</th>
+            <th>I</th>
+            <th>_</th>
+            <th>R</th>
+            <th>I</th>
+            <th>V</th>
+            <th>E</th>
+            <th>R</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td>1100</td>
+            <td>00</td>
+            <td>01</td>
+            <td>01</td>
+            <td>00</td>
+            <td>01</td>
+            <td>01</td>
+            <td>00</td>
+            <td>100</td>
+            <td>100</td>
+            <td>00</td>
+            <td>1111</td>
+            <td>101</td>
+            <td>00</td>
+            <td>1101</td>
+            <td>1110</td>
+            <td>101</td>
+            <td>46 <b class="js">BIT</b></td>
+          </tr>
+          </table>
+
+
+          <div class="em2 substep" style="margin:50px">
+            <img src="img/math.png" alt="">
+          </div>
+
+
+        </div>
+        <!-- Lossless Data Compression  -->
+        <div class="step slide opacity" data-x="4100" data-y="180"  data-z="-16000" >
+          <div class="title em3">LZ77 - “Today is Cyber Monday”</div>
+          <img src="img/lz77.png" alt="">
+        </div>
+        <!-- Lossy Data Compression  -->
+        <div class="step slide opacity" data-x="3000" data-y="1300" data-rotate-x="90" data-z="-16000" >
+          <div class="title em3">LZ78 - “abracadabra”</div>
+          <table style="margin-left:250px; margin-top: 50px;">
+            <tr> 
+              <th>OutPut</th>
+              <th>Index</th>
+              <th>String</th>
+            </tr>
+            <tr class="substep">
+              <td>&lt;0 , c(a)&gt;</td>
+              <td>1</td>
+              <td>a</td>
+            </tr>
+            <tr class="substep">
+              <td>&lt;0 , c(b)&gt;</td>
+              <td>2</td>
+              <td>b</td>
+            </tr>
+            <tr class="substep">
+              <td>&lt;0 , c(r)&gt;</td>
+              <td>3</td>
+              <td>r</td>
+            </tr>
+            <tr class="substep">
+              <td>&lt;1 , c(c)&gt;</td>
+              <td>4</td>
+              <td>ac</td>
+            </tr>
+            <tr class="substep">
+              <td>&lt;1 , c(d)&gt;</td>
+              <td>5</td>
+              <td>ad</td>
+            </tr>
+            <tr class="substep">
+              <td>&lt;1 , c(b)&gt;</td>
+              <td>6</td>
+              <td>ab</td>
+            </tr>
+            <tr class="substep">
+              <td>&lt;3 , c(a)&gt;</td>
+              <td>7</td>
+              <td>ra</td>
+            </tr> 
+          </table> 
+          <p class="textCenter substep">
+            &lt;0 , c(a)&gt; , &lt;0 , c(b)&gt;, &lt;0 , c(r)&gt;, &lt;1 , c(c)&gt;, &lt;1 , c(d)&gt;, &lt;1 , c(b)&gt;, &lt;3 , c(a)&gt;
+          </p>
+        </div>
+      <!-- Data Transmission -->
+        <div class="step slide opacity" data-x="4100" data-rotate-x="360" data-y="860" data-z="-16000" >
+          <div class="title em3">Conclusion</div>
+          <ul class="em3">
+            <li class="substep">Data compression is important!</li>
+            <li class="substep">How will you use it?</li>
+          </ul>
+        </div>
+
+        <!-- End -->
+         <div class="step opacity words" data-x="5600" data-y="860" data-roate-y="90"  data-rotate-z="90" data-z="-13000" data-scale="4" >
+          <h1 class="em7">Thank</h1>
+          <h1 class="em10">You!</h1>
+        </div>
+        <div class="step opacity words" data-x="5600" data-y="4060" data-rotate-x="180"  data-rotate-z="180" data-z="-13000" data-scale="4" >
+          <h1 class="em7">Questions</h1>
+          <div id="oneMoreThing" class="substep">
+          </div>
+        </div>
+        <div class="step opacity" data-x="5600" data-y="4060" data-rotate-x="180"  data-rotate-z="180" data-z="-18000" >
+
+        <img src="img/AlgorithmsDiagram.jpg"  width="500" height="700" alt="">
+        </div>
+        </div>  <!-- end of .impress -->
+        <script src="lib/iimpress.js"></script>
+        <script src="lib/jquery-2.1.1.min.js"></script>
+        <script src="js/custom.js"></script>
+      </body>
+    </html>
+
+
+
+
+    <!-- -->
