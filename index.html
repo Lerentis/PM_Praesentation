@@ -13,13 +13,13 @@
     <body ng-app>
       <div id="impress">
         <!-- Intro Slide  -->
-        <div class="step opacity words" data-x="0"  data-y="0"  data-z="0" >
+        <div id="intro" class="step opacity words" data-x="0"  data-y="0"  data-z="0" >
           <h1 class="fa fa-binoculars fa-5x textCenter"></h1>
           <div class="em5">Korruption und Moral in Projekten</div>
         </div>
  
         <!-- Was ist Korruption -->
-        <div class="step opacity words" data-x="0"  data-rotate-x="90" data-y="0"   data-scale="40" >
+        <div id="was" class="step opacity words" data-x="0"  data-rotate-x="90" data-y="0"   data-scale="40" >
           <div class="em5">
             Was ist Korruption
             <i class="colorTitle fa fa-question-circle"></i>
@@ -27,7 +27,7 @@
         </div>
 		
         <!-- definitionen -->
-        <div class="step opacity words" data-x="-1000"  data-rotate-x="90" data-y="0" data-z="300" data-scale="40" >
+        <div id="definitionen" class="step opacity words" data-x="-1000"  data-rotate-x="90" data-y="0" data-z="300" data-scale="40" >
           <div class="bar">
             <ul>
               <li class="substep">Korruption ist der Missbrauch anvertrauter Macht zum privaten Nutzen oder Vorteil</li>
@@ -37,7 +37,7 @@
         </div>
 
         <!-- was ist moral -->
-        <div class="step opacity words" data-x="1000"  data-y="500" data-z="-11000" >
+        <div id="moral" class="step opacity words" data-x="1000"  data-y="500" data-z="-11000" >
           <div class="em5">
             Was ist Moral 
             <div class="model" style="margin-left:-80px; margin-top:50px;">
@@ -49,7 +49,7 @@
         </div>
 		
         <!-- definition -->
-      <div class="step opacity words" data-x="1300"  data-y="670" data-z="-11000" >
+      <div id="definition_moral" class="step opacity words" data-x="1300"  data-y="670" data-z="-11000" >
         <div class="bar">
             <ul>
               <li class="substep">Nicht Gesetzlich geregelt</li>
@@ -60,7 +60,7 @@
       </div>
 
         <!-- StGB-->
-        <div class="step opacity words" data-x="2000" data-rotate-y="70" data-y="1000" data-z="-13000" >
+        <div id="StGB" class="step opacity words" data-x="2000" data-rotate-y="70" data-y="1000" data-z="-13000" >
           
         <div class="model">
           
@@ -79,46 +79,43 @@
         </div>
 
         <!-- StGB -->
-        <div class="step opacity words" data-x="3000"  data-y="1700" data-z="-15000" >
+        <div id="StrafenStGB" class="step opacity words" data-x="3000"  data-y="1700" data-z="-15000" >
           <h2 class="fa fa-book textCenter fa-5x"></h2>
           <div class="em5">
             Strafen nach dem StGB
           </div>
         </div>
-        <div class="step slide opacity" data-x="3000" data-rotate-y="180" data-y="1800" data-z="-16000" >
+        <div id="299" class="step slide opacity" data-x="3000" data-rotate-y="180" data-y="1800" data-z="-16000" >
           <div class="title em3"> &sect; 299 </div>
           <img src="img/299.png" class="model" alt="" style="margin-left: 15%; margin-right: 15%">
-          <div class="clearfix"></div>
           <p class="substep em2 textCenter" style="margin-bottom: 50% ">Und in schwereren Fällen?</p>
         </div>
 
         <!-- 300 -->
-        <div class="step slide opacity" data-x="3000" data-rotate-y="180" data-y="1800" data-z="-17500">     
+        <div id="300" class="step slide opacity" data-x="3000" data-rotate-y="180" data-y="1800" data-z="-17500">     
           <div class="title em3"> &sect; 300 </div>
           <img src="img/300.png" class="model" alt="" style="margin-left: 15%; margin-right: 15%">
         </div>
 		
-		
-		
 		<!-- Moralvorstellung im Projekt -->
-        <div class="step slide opacity" data-x="3000" data-y="1800"  data-z="-17000" >
+        <div id="moralImProjekt" class="step slide opacity" data-x="3000" data-y="1800" data-z="17000" >
           <div class="title em3">Auswirkung von zu hoher Moralvorstellung </div>
            <img src="img/ApTIDUU.png" class="model" alt="" style="margin-left: 20%; margin-right: 20%">
           <div class="clearfix"></div>  
-        </div>
+        </div> 
 		
 		<!-- Thema -->
-		<div class="step slide opacity" data-x="4500" data-y="1800" data-z="-17000" data-rotate-z="-90">
+		<div id="Thema" class="step slide opacity" data-x="4500" data-y="1800" data-z="17000" data-rotate-z="-90">
 		  <div class="title em3">Thema </div>
           <ul class="em25">
             <p class="substep">Auswirkung: positiv und negativ</p>
 			<p class="substep">zu hoch:<br>Überschreitung eines Wertes(Vorstellung)</p>
 			<p class="substep">Moral(Vorstellung):<br>Einhaltung einer festgelegten Norm<br>für die Funktion einer Gemeinschaft.</p>
           </ul>
-		</div>
+		</div> 
 		
 		<!-- Interpretation -->
-		<div class="step slide opacity" data-x="4000" data-y="3500"  data-z="-16500">
+		<div id="interpretation" class="step slide opacity" data-x="4000" data-y="3500"  data-z="-16500">
 		  <div class="title em3">Interpretation </div>
 		  <p class="em25 textCenter" >
 		    Überschätzung <br>von Wertvorstellungen und <br>seine Auswirkung <br>auf das Projekt
@@ -126,13 +123,13 @@
 		</div>
 		
 		<!-- Moegliche Ursachen -->
-		<div class="step opacity words" data-x="5500" data-y="3500" data-z="-16500" data-rotate-z="60" data-scale="40" >
+		<div id="ursachen" class="step opacity words" data-x="5500" data-y="3500" data-z="-16500" data-rotate-z="60" data-scale="40" >
           <div class="em5">
             Mögliche Ursachen
 		  </div>
 		</div>
 		<!-- Gruende -->
-		<div class="step opacity words" data-x="5500" data-y="3500" data-z="-16000" data-rotate-z="60" data-scale="40" >
+		<div id="gruende" class="step opacity words" data-x="5500" data-y="3500" data-z="-16000" data-rotate-z="60" data-scale="40" >
 		<div class="bar">
             <ul>
               <li class="substep">Manager</li>
@@ -144,7 +141,7 @@
       </div>
 		
 		<!-- Manager -->
-		<div class="step slide opacity" data-x="5500" data-rotate-x="90" data-y="3500" data-roate-y="30" data-z="-16000" >
+		<div id="manager" class="step slide opacity" data-x="5500" data-rotate-x="90" data-y="3500" data-roate-y="30" data-z="-16000" >
 		  <div class="title em3">Manager </div>
 		  <ul class="em25">
             <li class="substep">Auf das Projektteam zu sehr eingehen</li>
@@ -159,49 +156,47 @@
 		</div>
 		
 		<!-- kulturelle Unterschiede -->
-		<div class="step slide opacity" data-x="6000" data-y="3500" data-roate-y="30" data-z="-17000" >
+		<div id="kulturelleUnterschiede" class="step slide opacity" data-x="6000" data-y="3500" data-roate-y="30" data-z="17000" >
 		  <div class="title em3">kulturelle Unterschiede</div>
 		  <ul class="em25">
             <li class="substep">Unterschiedliche Wertvorstellungen</li>
             <li class="substep">Unterschiedliche Höflichkeitsformen</li>
-			<li class="substep">Umgangsformen</li>
-			<li class="substep">Arbeitsmoral</li>
-			<li class="substep">Erwartungshaltungen</li>
-          </ul>
-		</div>
+			      <li class="substep">Umgangsformen</li>
+			      <li class="substep">Arbeitsmoral</li>
+			      <li class="substep">Erwartungshaltungen</li>
+      </ul>
+		</div> 
 		
 		<!-- Negative Auswirkungen -->
-		<div class="step slide opacity" data-x="3000" data-y="180" data-z="-16000" data-rotate-z="-90">
+		<div id="negativeAuswirkungen" class="step slide opacity" data-x="3000" data-y="180" data-z="-16000" data-rotate-z="-90">
 		  <div class="title em3">Negative Auswirkung</div>
 		  <ul class="em25">
-            <li class="substep">Respektlosigkeit</li>
-			<li class="substep">Keine rechtzeitige Fertigstellung</li>
-			<li class="substep">Ineffizienter Ressourcenverbrauch</li>
-			<li class="substep">Nicht Einhaltung von Taskzeiten</li>
-			<li class="substep">Teure Investitionen</li>
-			<li class="substep">Verluste</li>
-			<li class="substep">Ungleiche Lastverteilung der Mitarbeiter</li>
-			<li class="substep">Ungelöste Konflikte</li>
-			<li class="substep">Ausnutzung der Moralvorstellung</li>
-          </ul>
+         <li class="substep">Respektlosigkeit</li>
+			   <li class="substep">Keine rechtzeitige Fertigstellung</li>
+			   <li class="substep">Ineffizienter Ressourcenverbrauch</li>
+			   <li class="substep">Nicht Einhaltung von Taskzeiten</li>
+			   <li class="substep">Teure Investitionen</li>
+			   <li class="substep">Verluste</li>
+			   <li class="substep">Ungleiche Lastverteilung der Mitarbeiter</li>
+			   <li class="substep">Ungelöste Konflikte</li>
+			   <li class="substep">Ausnutzung der Moralvorstellung</li>
+      </ul>
 		</div>
 		
 		<!-- Positive Auswirkungen -->
-		<div class="step slide opacity" data-x="3000" data-y="250" data-rotate-y="90" data-z="-16500" >
+		<div id="positiveAuswirkungen" class="step slide opacity" data-x="3000" data-y="250" data-rotate-y="90" data-z="16500" >
 		  <div class="title em3">Positive Auswirkung</div>
 		  <ul class="em25">
             <li class="substep">Motivation des Teams</li>
             <li class="substep">Erhöhte Produktivität</li>
-			<li class="substep">Freie Meinungsäußerung</li>
-			<li class="substep">Spaß an der Arbeit</li>
-			<li class="substep">Stress Minderung</li>
-          </ul>
+			      <li class="substep">Freie Meinungsäußerung</li>
+			      <li class="substep">Spaß an der Arbeit</li>
+			      <li class="substep">Stress Minderung</li>
+      </ul>
 		</div>
-        
-		
 		
 		<!-- Auswirkung von Skandalfaellen -->
-		<div class="step opacity words" data-x="4100" data-y="350" data-z="-16000" >
+		<div id="Skandalfaellen" class="step opacity words" data-x="4100" data-y="350" data-z="16000" >
           <div class="em5">
             Auswirkung von Skandalfällen 
 			<div class="model" style="margin-left:-80px; margin-top:50px;">
@@ -213,7 +208,7 @@
 		</div>
 	  
       <!-- Auswirkungen auf das Projekt -->
-      <div class="step opacity words" data-x="4400"  data-y="450" data-z="-16000" >
+      <div id="AuswirkungenProjekt" class="step opacity words" data-x="4400"  data-y="450" data-z="16000" >
 		<div class="bar">
             <ul>
               <li class="substep">Unternehmen verliert Glaubwürdigkeit</li>
@@ -222,16 +217,16 @@
 			  <li class="substep">sinkende Motivation im Team - führt zu Produktivitätsverlust</li>
             </ul>
         </div>
-      </div>
+      </div> 
 	  
         <!-- Ilisu-Projekt  -->
-        <div class="step slide opacity" data-x="3000" data-y="1300" data-rotate-x="90" data-z="-16000" >
+        <div id="Ilisu-Projekt" class="step slide opacity" data-x="3000" data-y="1300" data-rotate-x="90" data-z="-16000" >
           <div class="title em3">Ilisu-Projekt</div>
            <img src="img/ilisu.png" class="model" alt="" style="margin-left: 10%; margin-right: 10%">
           <div class="clearfix"></div>
         </div>
 		<!-- Details  -->
-		<div class="step slide opacity" data-x="3000" data-rotate-x="90" data-y="1300" data-z="-16000" >
+		<div id="ilisuDetails" class="step slide opacity" data-x="3000" data-rotate-x="90" data-y="1300" data-z="-16000" >
           <div class="title em3">Ilisu-Projekt</div>
           <ul class="em25">
             <li class="substep">Bau eines Staudamms</li>
@@ -242,13 +237,13 @@
         </div>
 		
       <!-- Projekt Kreativschmiede -->
-	  <div class="step slide opacity" data-x="4100" data-rotate-x="360" data-y="860" data-z="-16000" >
+	  <div id="Kreativschmiede" class="step slide opacity" data-x="4100" data-rotate-x="360" data-y="860" data-z="-16000" >
           <div class="title em3">Projekt Kreativschmiede</div>
            <img src="img/altona.png" class="model" alt="" style="margin-left: 10%; margin-right: 10%">
           <div class="clearfix"></div>
         </div>
 		<!-- Details  -->
-        <div class="step slide opacity" data-x="4100" data-rotate-x="360" data-y="860" data-z="-16000" >
+        <div id="KreativschmiedeDetails" class="step slide opacity" data-x="4100" data-rotate-x="360" data-y="860" data-z="-16000" >
           <div class="title em3">Projekt Kreativschmiede</div>
           <ul class="em25">
             <li class="substep">Immobilienprojekt</li>
@@ -259,13 +254,11 @@
           </ul>
         </div>
 
-		
-		
         <!-- End -->
-         <div class="step opacity words" data-x="5600" data-y="860" data-roate-y="90"  data-rotate-z="90" data-z="-13000" data-scale="4" >
+         <div id="danke" class="step opacity words" data-x="5600" data-y="860" data-roate-y="90"  data-rotate-z="90" data-z="-13000" data-scale="4" >
           <h1 class="em7 textCenter" >Vielen Dank</h1>
         </div>
-        <div class="step opacity words" data-x="5600" data-y="4060" data-rotate-x="180"  data-rotate-z="180" data-z="-13000" data-scale="4" >
+        <div id="fragen" class="step opacity words" data-x="5600" data-y="4060" data-rotate-x="180"  data-rotate-z="180" data-z="-13000" data-scale="4" >
           <h1 class="em7">Fragen</h1>
         </div>
 
